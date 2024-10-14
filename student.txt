@@ -1,0 +1,5 @@
+o	Student name: Lars de Boer
+o	Student number: 706258
+o	Student class: your class 
+o	GitHub Repository: your github repository URL 
+o	GitHub Pages URL: your github pages URL* 
