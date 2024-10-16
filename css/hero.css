@@ -5,7 +5,6 @@ body {
     text-align: center;
 }
 
-/* Hero Section */
 .hero {
     background-image: url("Lars-de-Boer-opdracht\img\chonky.jpg");
    
@@ -18,7 +17,7 @@ body {
 
 .hero-content {
     background: rgba(0, 0, 0, 0.5);
-    padding: 30px;
+    padding: 200px;
     border-radius: 15px;
 }
 
