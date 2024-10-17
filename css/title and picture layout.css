@@ -10,28 +10,25 @@ body {
     justify-content: center;
     gap: 20px;
     margin-top: 20px;
-    flex-wrap: wrap;
-    /* Ensures responsiveness on smaller screens */
+
 }
 
 .image-right .text {
     order: 1;
-    /* Text first */
+
 }
 
 .image-right .image {
     order: 2;
-    /* Image second */
+
 }
 
 .image-left .text {
     order: 2;
-    /* Text second */
 }
 
 .image-left .image {
     order: 1;
-    /* Image first */
 }
 
 .text {
