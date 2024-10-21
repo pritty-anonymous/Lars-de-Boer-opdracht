@@ -1,4 +1,4 @@
-/* navbar for all pages */
+/* navbar for all pages now with nesting*/
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
@@ -13,66 +13,67 @@ body {
     top: 0;
     width: 100%;
     z-index: 1000;
-}
 
-.navbar-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+    .navbar-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
-.logo img {
-    height: 40px;
-    width: 80px;
-}
+    .logo {
+        img {
+            height: 40px;
+            width: 80px;
+        }
+    }
 
-.nav-links {
-    display: flex;
-    gap: 15px;
-}
+    .nav-links {
+        display: flex;
+        gap: 15px;
 
-.nav-links a {
-    background-color: #34495e;
-    color: #ecf0f1;
-    text-decoration: none;
-    padding: 15px 25px;
-    border-radius: 6px;
-    transition: background-color 0.3s, color 0.3s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-width: 80px;
+        a {
+            background-color: #34495e;
+            color: #ecf0f1;
+            text-decoration: none;
+            padding: 15px 25px;
+            border-radius: 6px;
+            transition: background-color 0.3s, color 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 80px;
 
-}
+            &:hover {
+                background-color: #3498db;
+                color: white;
+            }
 
-.nav-links a:hover {
-    background-color: #3498db;
-    color: white;
-}
+            &.active {
+                background-color: #e74c3c;
+                color: white;
+            }
+        }
+    }
 
-.nav-links a.active {
-    background-color: #e74c3c;
-    color: white;
-}
+    .login-btn {
+        background-color: #16a085;
+        color: #ecf0f1;
+        text-decoration: none;
+        padding: 10px 20px;
+        border-radius: 6px;
+        transition: background-color 0.3s, color 0.3s;
+        display: flex;
+        align-items: center;
+        min-width: 80px;
 
-.login-btn {
-    background-color: #16a085;
-    color: #ecf0f1;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 6px;
-    transition: background-color 0.3s, color 0.3s;
-    display: flex;
-    align-items: center;
-    min-width: 80px;
-}
-
-.login-btn:hover {
-    background-color: #1abc9c;
-    color: white;
+        &:hover {
+            background-color: #1abc9c;
+            color: white;
+        }
+    }
 }
 
 .content {

@@ -3,46 +3,84 @@ body {
     font-family: Arial, sans-serif;
     margin: 20px;
     text-align: center;
+    background-color: #71F1E5;
 }
 
-.content {
+.content-box {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 20px;
-    margin-top: 20px;
-
-}
-
-.image-right .text {
-    order: 1;
-
-}
-
-.image-right .image {
-    order: 2;
-
-}
-
-.image-left .text {
-    order: 2;
-}
-
-.image-left .image {
-    order: 1;
-}
-
-.text {
-    max-width: 400px;
-    text-align: left;
-}
-
-.image {
-    max-width: 600px;
-}
-
-.image img {
-    max-width: 100%;
-    height: auto;
+    background-color: #FFB199;
+    padding: 20px;
+    border: 2px solid black;
     border-radius: 8px;
+    max-width: 800px;
+    margin: 20px auto;
+
+    .text-content {
+        max-width: 400px;
+        text-align: left;
+        font-family: 'Open Sans', sans-serif;
+
+        .title-button {
+            text-decoration: none;
+
+            .title {
+                font-family: 'Comfortaa', sans-serif;
+                font-size: 24px;
+                margin: 0;
+                text-align: left;
+                border-bottom: 2px solid black;
+                /* Underscore*/
+                padding-bottom: 5px;
+                color: #333;
+                transition: color 0.3s, border-color 0.3s;
+                cursor: pointer;
+            }
+
+            &:hover .title {
+                color: #3498db;
+                /* Change color on hover */
+                border-color: #3498db;
+            }
+        }
+
+        .small-text {
+            font-size: 14px;
+            margin: 10px 0;
+        }
+
+        .large-text {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+    }
+
+    .image {
+        max-width: 200px;
+        border: 2px solid black;
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+    }
+
+    &.image-right .text-content {
+        order: 1;
+    }
+
+    &.image-right .image {
+        order: 2;
+    }
+
+    &.image-left .text-content {
+        order: 2;
+    }
+
+    &.image-left .image {
+        order: 1;
+    }
 }
