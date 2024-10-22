@@ -1,0 +1,129 @@
+body, p, a, li {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Comfortaa', cursive;
+}
+.help-and-search
+{
+max-width: 1300px;
+justify-content: space-between;
+
+    .search-bar {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0;
+    }
+
+.search-input {
+    width: 50%;
+    padding: 10px;  
+    border: 2px solid #F0A48D;
+    border-radius: 5px;
+    background: white;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+ .pagination a {
+    margin: 0 5px;
+    text-decoration: none;
+    color: #1e1e1e;
+ }
+
+.help-section {
+    background-color: #00BFAD;
+    padding: 10px;
+    text-align: left;
+    height: 150px;
+    width: 200px;
+    position: relative;
+}
+}
+.help-header {
+    font-family: 'Comfortaa', cursive;
+    color: black;
+}
+
+button#add-question-btn {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-popup {
+    background: #FFB199;
+    width: 60%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 15px;
+    position: relative;
+}
+
+.form-content label,
+.form-content input,
+.form-content textarea {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.form-content .submit-btn {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.close-btn {
+    background: red;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.success-message {
+    background: green;
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+
+.ad-space {
+    background: #00CDBA;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    line-height: 2em;
+}
+
+.forum-submissions {
+    display: grid;
+    gap: 10px;
+    background: #FFB199;
+}
+
+.submission {
+    padding: 15px;
+    background: #FFB199;
+    border: 1px double black;
+}
+
+.comment-btn {
+    background-color: #00BFAD;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+} 
