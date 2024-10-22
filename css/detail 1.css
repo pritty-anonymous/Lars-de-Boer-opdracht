@@ -2,7 +2,9 @@
 body, p, a, li {
     font-family: 'Open Sans', sans-serif;
 }
-
+html {
+    scroll-behavior: smooth;
+}
 h1, h2 {
     font-family: 'Comfortaa', cursive;
     text-transform: uppercase;
@@ -21,7 +23,7 @@ h1, h2 {
     display: flex;
     width: 400px;
     height: 800px;
-    padding: 10px;
+    padding: 20px;
     flex-direction: column;
     align-items: center;
     gap: 10px;
@@ -36,8 +38,8 @@ h1, h2 {
     width: 300px;
     min-width: 250px;
     position: flex;
-    border-radius: 0px;
-    padding: 0px;
+    border-radius: 20px;
+    padding: 20px;
     background: #FFB199;
 }
 /* Text and title styling */
@@ -45,7 +47,6 @@ h1, h2 {
     display: flex;
     flex-direction: column;
     align-self: stretch;
-    flex-shrink: 0;
     position: relative;
 }
 
