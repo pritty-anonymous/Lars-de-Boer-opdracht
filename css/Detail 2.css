@@ -1,0 +1,53 @@
+body, p, a, li {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Comfortaa', cursive;
+}
+.card-grid-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    background: #FFB199;
+    max-width: 1300px;
+    margin: 0 auto;
+    border-radius: 50px;
+    border: 2px solid black;
+    padding: 20px;
+}
+
+.card {
+    display: flex;
+    background: #F0A48D;
+    width: 520px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.card img {
+    width: 180px;
+    height: 180px;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+.card-text {
+    padding: 20px;
+    display: right;
+    flex-direction: column;
+}
+
+.card-title {
+    font-size: 28px;
+    font-family: 'Comfortaa', cursive;
+    color: black;
+    display: right;
+}
+
+.card-description {
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    color: gray;
+    display: right;
+}
