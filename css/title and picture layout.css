@@ -1,42 +1,49 @@
 /* made it so the allignment of text is set for the home page (still WIP)*/
 body {
     font-family: Arial, sans-serif;
-    margin: 20px;
-    text-align: center;
+    margin: 200px;
+    text-align: flex;
     background-color: #71F1E5;
 }
 
 .content-box {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 20px;
+    gap: 80px;
     background-color: #FFB199;
     padding: 20px;
     border: 2px solid black;
-    border-radius: 8px;
+    border-radius: 40px;
     max-width: 800px;
     margin: 20px auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        
+        &.image-right {
+            margin-left: 40px;
+            margin-right: auto;
+        }
+    
+        &.image-left {
+            margin-left: auto;
+            margin-right: 40px;
+        }
 
-    .text-content {
-        max-width: 400px;
-        text-align: left;
-        font-family: 'Open Sans', sans-serif;
-
+.text-content {
+    max-width: 400px;
+    text-align: left;
+    
         .title-button {
-            text-decoration: none;
-
-            .title {
+            .title 
+            {
                 font-family: 'Comfortaa', sans-serif;
-                font-size: 24px;
+                font-size: 32px;
                 margin: 0;
                 text-align: left;
-                border-bottom: 2px solid black;
-                /* Underscore*/
+                border-bottom: 2px solid black;                    
                 padding-bottom: 5px;
-                color: #333;
-                transition: color 0.3s, border-color 0.3s;
+                color: #1b1a1a;
                 cursor: pointer;
+                }
             }
 
             &:hover .title {
@@ -47,7 +54,7 @@ body {
         }
 
         .small-text {
-            font-size: 14px;
+            font-size: 18px;
             margin: 10px 0;
         }
 
@@ -58,7 +65,7 @@ body {
     }
 
     .image {
-        max-width: 200px;
+        max-width: 1000px;
         border: 2px solid black;
 
         img {

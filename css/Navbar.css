@@ -1,81 +1,80 @@
 /* navbar for all pages now with nesting*/
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Comfortaa', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #71F1E5;;
 }
 
 .navbar {
-    background-color: #2c3e50;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #00CDBA;
     position: flex;
-    top: 0;
+    padding-bottom: 10px;
+    height: 100px;
     width: 100%;
     z-index: 1000;
+}
 
-    .navbar-container {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 10px 20px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
+.navbar-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-    .logo {
-        img {
-            height: 40px;
-            width: 80px;
-        }
-    }
+.logo img {
+    height: auto;
+    max-height: 40px;
+    max-width: 100%;
 
-    .nav-links {
-        display: flex;
-        gap: 15px;
+}
 
-        a {
-            background-color: #34495e;
-            color: #ecf0f1;
-            text-decoration: none;
-            padding: 15px 25px;
-            border-radius: 6px;
-            transition: background-color 0.3s, color 0.3s;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            min-width: 80px;
+.nav-links {
+    display: flex;
+    gap: 15px;
+}
 
-            &:hover {
-                background-color: #3498db;
-                color: white;
-            }
+.nav-links a {
+    background-color: #ECF0F1;;
+    color: #000000;
+    padding: 10px 20px;
+    border-radius: 100px;
+    transition: background-color 0.3s, color 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 80px;
+}
 
-            &.active {
-                background-color: #e74c3c;
-                color: white;
-            }
-        }
-    }
+.nav-links a:hover {
+    background-color: #3498db;
+    color: white;
+}
 
-    .login-btn {
-        background-color: #16a085;
-        color: #ecf0f1;
-        text-decoration: none;
-        padding: 10px 20px;
-        border-radius: 6px;
-        transition: background-color 0.3s, color 0.3s;
-        display: flex;
-        align-items: center;
-        min-width: 80px;
+.nav-links a.active {
+    background-color: #e74c3c;
+    color: white;
+}
 
-        &:hover {
-            background-color: #1abc9c;
-            color: white;
-        }
-    }
+.login-btn {
+    position: right;
+    width: 70px;
+    height: 70px;
+}
+
+.login-btn img {
+    width: auto;
+    height: 100%;
+    max-width: 100%;
+    transition: opacity 0.3s ease;
+}
+
+.login-btn:hover img {
+    opacity: 0.7;
 }
 
 .content {
-    padding: 100px 20px;
+    padding: 10px 2px;
 }
