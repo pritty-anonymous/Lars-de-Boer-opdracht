@@ -3,59 +3,94 @@ body, p, a, li {
 }
 
 h1, h2, h3, h4 {
-    font-family: 'Comfortaa', cursive;
+    font-family: 'Comfortaa';
 }
-.help-and-search
-{
-max-width: 1300px;
-justify-content: space-between;
+header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    background-color: #71F1E5;
+}
+header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 10px;
+    background-color: #71F1E5;
+}
 
-    .search-bar {
-        display: flex;
-        justify-content: center;
-        margin: 20px 0;
-    }
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 35px;
+    background: #00BFAD;
+    border-radius: 8px;
+    margin-right: 30px;
+}
 
-.search-input {
+.box h1 {
+    margin: 40 20 20px;
+}
+
+button {
+    padding: 30px 50px;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+button:hover {
+    background-color: #333;
+}
+
+.search-area {
+    display: flex;
+    flex-direction: column;
+    align-items: right;
     width: 50%;
-    padding: 10px;  
-    border: 2px solid #F0A48D;
-    border-radius: 5px;
-    background: white;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.search-container {
+    width: 80%;
+    margin-left: auto;
+    padding: 20px;
+}
+
+.search-container input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
 .pagination {
     display: flex;
     justify-content: center;
-    margin: 20px 0;
+    margin-top: 10px;
+    padding: 20px;
 }
 
- .pagination a {
-    margin: 0 5px;
+.pagination a {
+    padding: 5px 10px;
+    margin: 0 2px;
     text-decoration: none;
-    color: #1e1e1e;
- }
-
-.help-section {
-    background-color: #00BFAD;
-    padding: 10px;
-    text-align: left;
-    height: 150px;
-    width: 200px;
-    position: relative;
+    color: #333;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
+
+.pagination a:hover {
+    background-color: #ddd;
 }
 .help-header {
     font-family: 'Comfortaa', cursive;
     color: black;
-}
-
-button#add-question-btn {
-    background-color: black;
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
 }
 
 .form-popup {
@@ -98,13 +133,6 @@ button#add-question-btn {
     color: white;
 }
 
-.ad-space {
-    background: #00CDBA;
-    color: black;
-    padding: 20px;
-    text-align: center;
-    line-height: 2em;
-}
 
 .forum-submissions {
     display: grid;
@@ -127,3 +155,10 @@ button#add-question-btn {
 .hidden {
     display: none;
 } 
+.ad-space {
+    background: #00CDBA;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    line-height: 2em;
+}

@@ -20,59 +20,62 @@
         <a href="Placeholder">login-btn</a>
     </section>
     </nav>
-</head>
-<body>
-    <section class="help-and-search">
-          <section class="help-section">
-        <header class="help-header">
-            <h2>Hulp nodig?</h2>
-            <button id="add-question-btn">Vraag Toevoegen</button>
-        </header>
+</head>    
+<header>
+    <section class="box">
+        <h1>Hulp Nodig?</h1>
+        <button>Vraag Toevoegen</button>
+
     </section>
-
-    <section class="search-bar">
-        <input type="text" class="search-input" placeholder="Zoek hier...">
-    </section>
-    <section class="pagination">
-        <a href="#">1</a>
-        <a href="#">2</a>
-        <a href="#">3</a>
-        <a href="#">Volgende</a>
-    </section>  
-    </section>
-    <section id="form-popup" class="form-popup hidden">
-        <header>
-            <h3>Voeg je vraag toe</h3>
-            <button class="close-btn">&times;</button>
-        </header>
-        <form class="form-content">
-            <label for="name">Voornaam:</label>
-            <input type="text" id="name" name="name">
-
-            <label for="surname">Achternaam:</label>
-            <input type="text" id="surname" name="surname">
-
-            <label for="phone">Telefoonnummer:</label>
-            <input type="text" id="phone" name="phone">
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email">
-
-            <label for="summary">Korte Samenvatting:</label>
-            <textarea id="summary" name="summary"></textarea>
-
-            <label for="details">Probleemomschrijving:</label>
-            <textarea id="details" name="details"></textarea>
-
-            <label for="photo">Upload Foto:</label>
-            <input type="file" id="photo" name="photo">
-
-            <button type="submit" class="submit-btn">Verzend</button>
+    <search class="search-area">
+        <form class="search-container">
+            <input type="text" placeholder="Search...">
         </form>
+        <nav class="pagination">
+            <a href="#">&#171; Prev</a>
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">Next &#187;</a>
+        </nav>
+    </search>
+
+    <section id="form-popup" class="form-popup hidden">
+    <header>
+        <h3>Voeg je vraag toe</h3>
+        <button class="close-btn">&times;</button>
+    </header>
+    <form class="form-content">
+        <label for="name">Voornaam:</label>
+        <input type="text" id="name" name="name">
+
+        <label for="surname">Achternaam:</label>
+        <input type="text" id="surname" name="surname">
+
+        <label for="phone">Telefoonnummer:</label>
+        <input type="text" id="phone" name="phone">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+
+        <label for="summary">Korte Samenvatting:</label>
+        <textarea id="summary" name="summary"></textarea>
+
+        <label for="details">Probleemomschrijving:</label>
+        <textarea id="details" name="details"></textarea>
+
+        <label for="photo">Upload Foto:</label>
+        <input type="file" id="photo" name="photo">
+
+        <button type="submit" class="submit-btn">Verzend</button>
+    </form>
     </section>
     <section id="success-message" class="success-message hidden">
         <p>Succes</p>
     </section>
+</header>
+<body>
+    
     <section class="ad-space">
         <p>ADSPACE ADSPACE ADSPACE ADSPACE</p>
     </section>
