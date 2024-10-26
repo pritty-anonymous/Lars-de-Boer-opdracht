@@ -1,17 +1,17 @@
-body, p, a, li {
+body,
+p,
+a,
+li {
     font-family: 'Open Sans', sans-serif;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     font-family: 'Comfortaa';
 }
-header {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 10px;
-    background-color: #71F1E5;
-}
+
 header {
     display: flex;
     align-items: flex-start;
@@ -28,10 +28,6 @@ header {
     background: #00BFAD;
     border-radius: 8px;
     margin-right: 30px;
-}
-
-.box h1 {
-    margin: 40 20 20px;
 }
 
 button {
@@ -88,6 +84,7 @@ button:hover {
 .pagination a:hover {
     background-color: #ddd;
 }
+
 .help-header {
     font-family: 'Comfortaa', cursive;
     color: black;
@@ -133,7 +130,6 @@ button:hover {
     color: white;
 }
 
-
 .forum-submissions {
     display: grid;
     gap: 10px;
@@ -154,11 +150,77 @@ button:hover {
 
 .hidden {
     display: none;
-} 
+}
+
+.content {
+    display: flex;
+    margin-top: 20px;
+}
+
+.layout {
+    display: flex;
+    align-items: flex-start;
+}
+
 .ad-space {
-    background: #00CDBA;
-    color: black;
+    width: 20%;
+    min-height: 300px;
+    background-color: #00CDBA;
+    height: 1750px;
+    color: white;
     padding: 20px;
+    border-radius: 8px;
     text-align: center;
-    line-height: 2em;
+    margin-right: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.cards {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.card {
+    display: flex;
+    background-color: #FFB199;
+    border-radius: 20px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.card h4 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.card p {
+    margin-top: 10px;
+    line-height: 1.4;
+    color: grey;
+}
+
+.comments-btn {
+    padding: 10px 20px;
+    background-color: #ccc;
+    color: #333;
+    cursor: pointer;
+    width: auto;
+    margin-top: 15px;
+    align-self: flex-start;
+    border-radius: 4px;
+    border: 1px solid black;
+}
+
+.comments-btn:hover {
+    background-color: #bbb;
 }
