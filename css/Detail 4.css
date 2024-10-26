@@ -12,6 +12,7 @@ header {
 .header-box {
     display: flex;
     flex-direction: row;
+    width: 100%;
 }
 
 .dropdowns {
