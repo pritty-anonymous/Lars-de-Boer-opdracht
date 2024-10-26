@@ -11,18 +11,25 @@ header {
 
 .header-box {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-direction: row;
 }
 
-.dropdown-container {
+.dropdowns {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    margin-right: 20px;
+    padding: 40px;
+    min-width: 350px;
+}
+
+label {
+    margin-bottom: 5px;
+    width: 100%;
+    padding: 25px;
 }
 
 select {
-    margin: 5px;
-    padding: 10px;
+    width: 100%;
 }
 
 .search-button {
@@ -32,6 +39,11 @@ select {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    align-self: flex-start;
+    padding: 50px;
+    min-width: 300px;
+    margin: 30px;
+
 }.pagination {
     display: flex;
     justify-content: center;
