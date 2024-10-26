@@ -1,0 +1,39 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+
+}
+.header-box h1,
+.faq-box h2 {
+    font-family: 'Comfortaa', cursive;
+}
+header {
+    background-color: #71F1E5;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.header-box {
+    flex: 1;
+    padding: 25px;
+    margin: 100px ;
+    background-color: #00CDBA;
+    max-width: 500px;
+    border-radius: 40px;
+}
+
+.name {
+    color: grey;
+
+}
+
+.profile-picture {
+    width: 600px;
+    height: auto;
+    margin: 20px 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 40px;
+}

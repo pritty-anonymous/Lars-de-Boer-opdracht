@@ -64,3 +64,26 @@ select {
 .pagination a:hover {
     background-color: #ddd;
 }
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    background-color: #FFB199;
+    border-radius: 40px;
+    border: 1px double black;
+    padding: 15px;
+    margin: 10px;
+    flex: 0 1 calc(30% - 20px);
+    /* Three cards per row */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile-pic {
+    width: 450px;
+    height: 300px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
