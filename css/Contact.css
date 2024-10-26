@@ -37,3 +37,34 @@ header {
     margin-right: auto;
     border-radius: 40px;
 }
+.faq-box {
+    background-color: #FFB199;
+    padding: 20px;
+    margin-top: 20px;
+    margin: 50px;
+    border-radius: 40px;
+
+}
+
+.faq-box h2 {
+    margin-bottom: 20px;
+    
+
+}
+
+.faq-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #FFB199;
+
+}
+
+.faq-card {
+    margin-bottom: 10px;
+    padding: 15px;
+    background-color: #FFB199;
+    border-radius: 5px;
+    flex: 1 1 calc(30% - 10px);
+    box-sizing: border-box;
+}
