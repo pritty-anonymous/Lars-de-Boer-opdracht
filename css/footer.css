@@ -1,0 +1,38 @@
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+    width: 95%;
+
+}
+
+.footer-line {
+    border: none;
+    height: 4px;
+    background-color: black;
+
+    width: 100%;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.footer-links li {
+    display: inline;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-family: 'Comfortaa', sans-serif;
+}
+
+.footer-links a:hover {
+    color: #00CDBA;
+}
