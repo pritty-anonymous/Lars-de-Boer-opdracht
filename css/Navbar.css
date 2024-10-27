@@ -1,80 +1,49 @@
-/* navbar for all pages now with nesting*/
-body {
-    font-family: 'Comfortaa', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #71F1E5;;
-}
-
 .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background-color: #00CDBA;
-    position: flex;
-    padding-bottom: 10px;
-    height: 100px;
+    margin-bottom: 400px;
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     z-index: 1000;
+    border: 2px solid black;
 }
-
-.navbar-container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+body {
+    margin-top: 200px;
+    background-color: #71F1E5;
 }
-
-.logo img {
-    height: auto;
-    max-height: 40px;
-    max-width: 100%;
-
+.logo {
+    height: 200px;
+    width: 200px;
+    margin-right: 20px;
+    
 }
 
 .nav-links {
     display: flex;
-    gap: 15px;
+    gap: 80px;
+    list-style: none;
 }
 
-.nav-links a {
-    background-color: #ECF0F1;;
-    color: #000000;
-    padding: 10px 20px;
-    border-radius: 100px;
-    transition: background-color 0.3s, color 0.3s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-width: 80px;
+.nav-button {
+    padding: 8px 15px;
+    background-color: white;
+    color: black;
+    border-radius: 40px;
+    font-weight: bold;
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 24px;
 }
 
-.nav-links a:hover {
-    background-color: #3498db;
-    color: white;
+.nav-button:hover {
+    background-color: #e0e0e0;
 }
 
-.nav-links a.active {
-    background-color: #e74c3c;
-    color: white;
-}
+.login-icon img {
+    height: 80px;
+        margin-right: 20px;
 
-.login-btn {
-    position: right;
-    width: 70px;
-    height: 70px;
-}
-
-.login-btn img {
-    width: auto;
-    height: 100%;
-    max-width: 100%;
-    transition: opacity 0.3s ease;
-}
-
-.login-btn:hover img {
-    opacity: 0.7;
-}
-
-.content {
-    padding: 10px 2px;
 }
