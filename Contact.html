@@ -73,34 +73,54 @@
         </section>
     </section>
 
+    </script>
     <section class="contact-box">
     <section class="title-box">
         <h1>Contact Form</h1>
         <h2 class="name">Lars de Boer</h2>
     </section>
-        <section class="form-container"></div>
+        <section class="form-container">
+            <header id="success-message" class="success-message hidden">Verzonden</header>
             <form class="contact-form">
                 <label for="name">Naam</label>
                 <input type="text" id="name" name="name" required>
-
+    
                 <label for="surname">Achternaam</label>
                 <input type="text" id="surname" name="surname" required>
-
+    
                 <label for="phone">Telefoonnummer</label>
                 <input type="tel" id="phone" name="phone" required>
-
+    
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email" required>
-
+    
                 <label for="message">Bericht</label>
                 <textarea id="message" name="message" required></textarea>
-
+    
                 <button type="submit" class="submit-button">Verzenden</button>
             </form>
             <img src="img/The dude.jpg" alt="Lars de Boer" class="profile-picture2">
         </section>
-    </section>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const contactForm = document.querySelector('.contact-form');
+                const successMessage = document.getElementById('success-message');
 
+                contactForm.addEventListener('submit', function (event) {
+                    event.preventDefault(); // Prevent the default form submission
+
+                    // Show success message
+                    successMessage.style.display = "block";
+
+                    // Hide the message after 3 seconds
+                    setTimeout(() => {
+                        successMessage.style.display = "none";
+                    }, 3000);
+                });
+            });
+        </script>
+    </section>
+    
     <section class="quote-row">
         <section class="quotes-box">
             <article class="quote-card">

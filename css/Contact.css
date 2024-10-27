@@ -88,9 +88,7 @@ header {
 }
 
 .contact-box {
-
     border-radius: 20px;
-    
     padding: 20px;
     margin-top: 20px;
 }
@@ -98,8 +96,6 @@ header {
     display: flex;
     align-items: flex-start;
     gap: 100px;
-   
-
 }
 
 .contact-form {
@@ -132,6 +128,19 @@ header {
     border-radius: 5px;
     cursor: pointer;
 
+}
+.success-message {
+    background-color: green;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+    display: none;
+    border-radius: 5px;
 }
 .title-box{
     background-color: #FFB199;
@@ -188,8 +197,4 @@ header {
 .quote-card h1 {
     font-size: 1.2em;
     margin-bottom: 5px;
-}
-
-.quote-card p {
-    margin: 0;
 }
