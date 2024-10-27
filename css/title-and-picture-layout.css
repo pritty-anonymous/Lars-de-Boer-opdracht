@@ -1,8 +1,7 @@
 /* made it so the allignment of text is set for the home page (still WIP)*/
 body {
-    font-family: Arial, sans-serif;
+    font-family: sans-serif;
     margin: auto;
-    text-align: flex;
     background-color: #71F1E5;
 }
 .cookie-banner {
@@ -30,6 +29,7 @@ body {
 .accept-button:hover {
     background-color: #007a66;
 }
+
 .mobile-nav {
     display: none;
 }
@@ -43,10 +43,12 @@ body {
         display: block;
     }
 }
+
 p::first-letter {
     font-size: 2em;
     color: black;
 }
+
 .content-box {
     display: flex;
     align-items: center;
@@ -56,80 +58,76 @@ p::first-letter {
     border: 2px solid black;
     border-radius: 40px;
     max-width: 1400px;
-    margin: 100px ;
+    margin: 100px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        
-        &.image-right {
-            margin-left: 40px;
-            margin-right: auto;
-        }
-    
-        &.image-left {
-            margin-left: auto;
-            margin-right: 40px;
-        }
+}
+
+.content-box.image-right {
+    margin-left: 40px;
+    margin-right: auto;
+}
+
+.content-box.image-left {
+    margin-left: auto;
+    margin-right: 40px;
+}
 
 .text-content {
     max-width: 800px;
     text-align: left;
-    
-        .title-button {
-            .title 
-            {
-                font-family: 'Comfortaa', sans-serif;
-                font-size: 32px;
-                margin: 0;
-                text-align: left;
-                border-bottom: 2px solid black;                    
-                padding-bottom: 5px;
-                color: #1b1a1a;
-                cursor: pointer;
-                }
-            }
+}
 
-            &:hover .title {
-                color: #3498db;
-                border-color: #3498db;
-            }
-        }
+.title-button .title {
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 32px;
+    margin: 0;
+    text-align: left;
+    border-bottom: 2px solid black;
+    padding-bottom: 5px;
+    color: #1b1a1a;
+    cursor: pointer;
+}
 
-        .small-text {
-            font-size: 18px;
-            margin: 10px 0;
-        }
+.title-button:hover .title {
+    color: #3498db;
+    border-color: #3498db;
+}
 
-        .large-text {
-            font-size: 18px;
-            margin: 10px 0;
-        }
-    }
+.small-text {
+    font-size: 18px;
+    margin: 10px 0;
+}
 
-    .image {
-        max-width: 1000px;
+.large-text {
+    font-size: 18px;
+    margin: 10px 0;
+}
 
-        img {
-            max-width: 100%;
-            min-width: 400px;
-            min-height: 400px;
-            height: auto;
-            border-radius: 40px;
-            border: 2px solid black;
-        }
-    }
+.image {
+    max-width: 1000px;
+}
 
-    &.image-right .text-content {
-        order: 1;
-    }
+.image img {
+    max-width: 100%;
+    min-width: 400px;
+    min-height: 400px;
+    height: auto;
+    border-radius: 40px;
+    border: 2px solid black;
+}
 
-    &.image-right .image {
-        order: 2;
-    }
+.content-box.image-right .text-content {
+    order: 1;
+}
 
-    &.image-left .text-content {
-        order: 2;
-    }
+.content-box.image-right .image {
+    order: 2;
+}
 
-    &.image-left .image {
-        order: 1;
-    }
+.content-box.image-left .text-content {
+    order: 2;
+}
+
+.content-box.image-left .image {
+    order: 1;
 }
