@@ -5,6 +5,44 @@ body {
     text-align: flex;
     background-color: #71F1E5;
 }
+.cookie-banner {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #000;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    z-index: 9999;
+}
+
+.accept-button {
+    background-color: #00CDBA;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 16px;
+}
+
+.accept-button:hover {
+    background-color: #007a66;
+}
+.mobile-nav {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .desktop-nav {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: block;
+    }
+}
 p::first-letter {
     font-size: 2em;
     color: black;

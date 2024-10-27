@@ -1,7 +1,9 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <meta charset="UTF-8">  
-    <head>
+    <head>  
+
         <link rel="stylesheet" href="css/title and picture layout.css">
         <link rel="stylesheet" href="css/Navbar.css">
         <link rel="stylesheet" href="css/footer.css">
@@ -21,6 +23,23 @@
             </a>
         </nav>
     </head>
+    <div class="cookie-banner">
+        This site uses cookies. <button class="accept-button">Accept</button>
+    </div>
+    
+    <!-- Add JavaScript here -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const acceptButton = document.querySelector('.accept-button');
+            const cookieBanner = document.querySelector('.cookie-banner');
+
+            if (acceptButton && cookieBanner) {
+                acceptButton.addEventListener('click', function () {
+                    cookieBanner.style.display = 'none';
+                });
+            }
+        });
+    </script>
     <header style="background-image: url('img/Actual hero.png'); left: 80px; width: auto;max-height: 100%; margin-top: 100px;  
         border: 2px solid black; border-radius: 60px; position: relative; box-sizing: border-box; right: 40px;max-width: 85%;
         background-size: cover; background-position: center; padding: 250px; text-align: center; color: white;">
@@ -163,4 +182,5 @@
             <li><a href="#">Contact</a></li>
         </ul>
     </footer>
+  
 </html>
