@@ -5,7 +5,10 @@ body {
     text-align: flex;
     background-color: #71F1E5;
 }
-
+p::first-letter {
+    font-size: 2em;
+    color: black;
+}
 .content-box {
     display: flex;
     align-items: center;
