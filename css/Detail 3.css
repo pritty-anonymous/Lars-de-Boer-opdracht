@@ -1,14 +1,8 @@
-body,
-p,
-a,
-li {
+body ,p ,a ,li  {
     font-family: 'Open Sans', sans-serif;
 }
 
-h1,
-h2,
-h3,
-h4 {
+h1 ,h2 ,h3 , h4 {
     font-family: 'Comfortaa';
 }
 
@@ -90,13 +84,20 @@ button:hover {
     color: black;
 }
 
+.hidden {
+    display: none;
+}
+
 .form-popup {
     background: #FFB199;
     width: 60%;
     margin: auto;
     padding: 20px;
     border-radius: 15px;
-    position: relative;
+    position: fixed;
+    z-index: 9998;
+    transform: translate(25%, -25%);
+
 }
 
 .form-content label,
@@ -120,6 +121,8 @@ button:hover {
     color: white;
     font-size: 20px;
     cursor: pointer;
+    float: right;
+
 }
 
 .success-message {
@@ -146,10 +149,6 @@ button:hover {
     background-color: #00BFAD;
     padding: 5px;
     cursor: pointer;
-}
-
-.hidden {
-    display: none;
 }
 
 .content {

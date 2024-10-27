@@ -25,8 +25,32 @@
 <header>
     <section class="box">
         <h1>Hulp Nodig?</h1>
-        <button>Vraag Toevoegen</button>
+        <button id="show-form-btn">Vraag Toevoegen</button>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const showFormBtn = document.getElementById('show-form-btn');
+        const formPopup = document.querySelector('.form-popup');
+        const closeBtn = document.querySelector('.close-btn');
+        const submitBtn = document.querySelector('.submit-btn');
 
+        // Show the form when the button is clicked
+        showFormBtn.addEventListener('click', function () {
+            formPopup.classList.remove('hidden');
+        });
+
+        // Close the form when the close button is clicked
+        closeBtn.addEventListener('click', function () {
+            formPopup.classList.add('hidden');
+        });
+
+        // Handle form submission
+        submitBtn.addEventListener('click', function (event) {
+            event.preventDefault(); // Prevent the default form submission
+            formPopup.classList.add('hidden');
+            document.getElementById('success-message').classList.remove('hidden');
+        });
+    });
+</script>
     </section>
     <search class="search-area">
         <form class="search-container">
@@ -40,13 +64,9 @@
             <a href="#">Next &#187;</a>
         </nav>
     </search>
-
-    <section id="form-popup" class="form-popup hidden">
-    <header>
-        <h3>Voeg je vraag toe</h3>
-        <button class="close-btn">&times;</button>
-    </header>
-    <form class="form-content">
+    <section class="form-popup hidden">
+        <button class="close-btn">✖</button>
+        <form class="form-content">
         <label for="name">Voornaam:</label>
         <input type="text" id="name" name="name">
 
@@ -70,10 +90,10 @@
 
         <button type="submit" class="submit-btn">Verzend</button>
     </form>
-    </section>
     <section id="success-message" class="success-message hidden">
         <p>Succes</p>
     </section>
+</section>
 </header>
 <body> 
     <section class="layout">
