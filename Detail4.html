@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/title-and-picture-layout.css">
+    <link rel="stylesheet" href="css/Navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <title>Home</title>
+
+<body>
+    <nav class="navbar">
+        <img src="img/Pet_logo_idea_2.jpg" alt="Logo" class="logo">
+        <ul class="nav-links">
+            <li><a href="Home.html" class="nav-button">Home</a></li>
+            <li><a href="detail1.html" class="nav-button">Basics</a></li>
+            <li><a href="Detail2.html" class="nav-button">Instructions</a></li>
+            <li><a href="Detail3.html" class="nav-button">Forum</a></li>
+            <li><a href="Detail4.html" class="nav-button">Specifics</a></li>
+            <li><a href="Contact.html" class="nav-button">Contact</a></li>
+        </ul>
+        <a href="#" class="login-icon">
+            <img src="img/Login_Icon.png" alt="Login">
+        </a>
+    </nav>
+    <section class="cookie-banner">
+        This site uses cookies. <button class="accept-button">Accept</button>
+    </section>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const acceptButton = document.querySelector('.accept-button');
+            const cookieBanner = document.querySelector('.cookie-banner');
+
+            if (acceptButton && cookieBanner) {
+                acceptButton.addEventListener('click', function () {
+                    cookieBanner.style.display = 'none';
+                });
+            }
+        });
+    </script>
+    <header style="background-image: url('img/Actual_hero.png'); left: 80px; width: auto; max-height: 100%; margin-top: 100px;  
+        border: 2px solid black; border-radius: 60px; position: relative; box-sizing: border-box; right: 40px; max-width: 85%;
+        background-size: cover; background-position: center; padding: 250px; text-align: center; color: white;">
+    </header>
+    <section class="content-box image-right">
+        <article class="text-content">
+            <a href="Detail_1.html" class="title-button">
+                <h2 class="title">The Basics</h2>
+            </a>
+            <p class="small-text">Iedereen moet ergens beginnen en wij raden je aan om te beginnen bij de Basics.</p>
+            <p class="large-text">
+                Bij de Basics leer je je basisinformatie over het verzorgen van huisdieren. Hier vind je essentiële
+                benodigdheden en
+                tips voor het verzorgen van katten, honden, knaagdieren en vogels. Van voeding en hygiëne tot speeltjes
+                en
+                gezondheidszorg, deze sectie biedt je alles wat je moet weten om ervoor te zorgen dat je huisdieren
+                gelukkig en gezond
+                zijn. Ontdek hoe je een geschikte omgeving creëert en welke verzorging elke diersoort nodig heeft voor
+                een optimaal
+                welzijn.
+            </p>
+        </article>
+        <aside class="image">
+            <figure>
+                <img src="img/Naamloos.jpg" alt="The Basics" title="Basic shutterstock" />
+                <figcaption>&copy; shutterstock</figcaption>
+            </figure>
+        </aside>
+    </section>
+    <section class="content-box image-left">
+        <aside class="image">
+            <figure>
+                <img src="img/How_to.jpg" alt="Duck" title="How to pick up a duck thumbnail" />
+            </figure>
+        </aside>
+        <article class="text-content">
+            <a href="Detail_2.html" class="title-button">
+                <h2 class="title">Instructions</h2>
+            </a>
+            <p class="small-text">Waarom zijn instructies zo belangrijk? Omdat zelfs je hond niet weet hoe hij de
+                vuilniszak moet openmaken!</p>
+            <p class="large-text">
+                Op de pagina Instructions vind je uitgebreide handleidingen voor het uitvoeren van basisverzorgingstaken
+                voor je
+                huisdieren. Of je nu wilt leren hoe je je hond op de juiste manier uitlaat, de kooi van je hamster
+                schoonmaakt, of
+                vissen op een veilige manier voert, deze sectie biedt stapsgewijze instructies en handige tips. Elke
+                handleiding is
+                ontworpen om je te helpen bij het begrijpen van de specifieke behoeften van elk huisdier, zodat je met
+                vertrouwen kunt
+                zorgen voor hun welzijn. We willen ervoor zorgen dat zowel jij als je huisdieren een plezierige ervaring
+                hebben, terwijl
+                je de nodige taken efficiënt en effectief uitvoert.
+            </p>
+        </article>
+    </section>
+    <section class="content-box image-right">
+        <article class="text-content">
+            <a href="Detail_3.html" class="title-button">
+                <h2 class="title">Forums</h2>
+            </a>
+            <p class="small-text">Waarom zijn forums als een kat? Ze hebben altijd iets te zeggen, maar je moet goed
+                luisteren.</p>
+            <p class="large-text">
+                Op de pagina Forums kun je informatie en vragen delen met andere huisdierenliefhebbers
+                in een openbaar platform. Dit is de perfecte plek om ervaringen uit te wisselen, tips
+                te vragen of antwoorden te geven over de verzorging van verschillende huisdieren.
+                Of je nu een nieuwe eigenaar bent die vragen heeft over het opvoeden van een puppy
+                of een ervaren verzorger die advies wil geven over knaagdierverzorging, de Forums
+                bieden een ondersteunende gemeenschap. Hier vind je ook specifieke discussies over veelvoorkomende
+                problemen en oplossingen, waardoor je niet alleen leert, maar ook verbinding kunt maken met
+                gelijkgestemde mensen.
+            </p>
+        </article>
+        <aside class="image">
+            <figure>
+                <img src="img/Forum.png" alt="Het Forum" title="Here you can look at the Forum" />
+            </figure>
+        </aside>
+    </section>
+    <section class="content-box image-left">
+        <aside class="image">
+            <figure>
+                <img src="img/promblems_and_solutions.jpg" alt="Problems" title="Problems and solution picture" />
+            </figure>
+        </aside>
+        <article class="text-content">
+            <a href="Detail_4.html" class="title-button">
+                <h2 class="title">Specifics</h2>
+            </a>
+            <p class="small-text">Waarom zijn specifieke oplossingen als een goed boek? Ze helpen je altijd verder,
+                zelfs als je vastzit!</p>
+            <p class="large-text">
+                Op de pagina Specifics kun je gericht zoeken naar specifieke problemen en oplossingen voor de verzorging
+                van je
+                huisdieren. Deze sectie is ontworpen om je te helpen bij het vinden van antwoorden op veelvoorkomende en
+                unieke
+                vraagstukken die zich kunnen voordoen. Of je nu hulp nodig hebt bij het trainen van je hond, het
+                behandelen van een
+                gezondheidsprobleem bij je kat of het verbeteren van de levensomstandigheden van je vissen, hier vind je
+                gerichte
+                informatie. Elk onderwerp is zorgvuldig gecategoriseerd, zodat je snel de juiste antwoorden kunt vinden
+                en de beste zorg
+                voor je huisdieren kunt bieden. Met praktische tips en bewezen oplossingen ben je altijd voorbereid op
+                wat er ook maar
+                op je pad komt.
+            </p>
+        </article>
+    </section>
+    <section class="content-box image-right">
+        <article class="text-content">
+            <a href="Contact.html" class="title-button">
+                <h2 class="title">Contact</h2>
+            </a>
+            <p class="small-text">Waarom is contact belangrijk? Omdat zelfs je huisdier soms meer informatie nodig heeft
+                dan alleen "nee"!</p>
+            <p class="large-text">
+                Op de pagina Contact kun je eenvoudig in verbinding komen met ons team voor al je vragen, opmerkingen of
+                suggesties. We
+                begrijpen dat je soms behoefte hebt aan extra ondersteuning of verduidelijking over de verzorging van je
+                huisdieren. Of
+                je nu specifieke vragen hebt, hulp zoekt bij het navigeren door onze site, of feedback wilt geven over
+                je ervaring, we
+                staan klaar om je te helpen. Je kunt ons bereiken via e-mail, en we streven ernaar om je zo snel
+                mogelijk te antwoorden.
+                Jouw betrokkenheid is belangrijk voor ons, en samen kunnen we ervoor zorgen dat je de best mogelijke
+                zorg voor je
+                huisdieren kunt bieden.
+            </p>
+        </article>
+        <aside class="image">
+            <figure>
+                <img src="img/Contact_2.jpg" alt="Contact" title="Contact picture to go to Contact" />
+            </figure>
+        </aside>
+    </section>
+</body>
+<footer class="footer">
+    <ul class="footer-links">
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">Support</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</footer>
