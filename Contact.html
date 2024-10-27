@@ -34,7 +34,7 @@
                 wardrobe aliquip, et Porter destination Toto remarkable officia Helsinki excepteur Basset hound. Zürich
                 sleepy perfect consectetur.</p>
         </section> 
-        <img src="img/The dude.jpg" alt="The Dude" class="profile-picture">
+        <img src="img/TheDude.jpg" alt="The Dude" class="profile-picture">
     </header>
     
     <section class="faq-box">
@@ -69,8 +69,6 @@
             </article>
         </section>
     </section>
-
-    </script>
     <section class="contact-box">
     <section class="title-box">
         <h1>Contact Form</h1>
@@ -96,34 +94,35 @@
     
                 <button type="submit" class="submit-button">Verzenden</button>
             </form>
-            <img src="img/The dude.jpg" alt="Lars de Boer" class="profile-picture2">
+            <img src="img/TheDude.jpg" alt="Lars de Boer" class="profile-picture2">
         </section>
-        <script>
-            document.addEventListener('DOMContentLoaded', function () {
-                const contactForm = document.querySelector('.contact-form');
-                const successMessage = document.getElementById('success-message');
-
-                contactForm.addEventListener('submit', function (event) {
-                    event.preventDefault(); // Prevent the default form submission
-
-                    // Show success message
-                    successMessage.style.display = "block";
-
-                    // Hide the message after 3 seconds
-                    setTimeout(() => {
-                        successMessage.style.display = "none";
-                    }, 3000);
-                });
-            });
-        </script>
     </section>
+       <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const contactForm = document.querySelector('.contact-form');
+            const successMessage = document.getElementById('success-message');
+
+            contactForm.addEventListener('submit', function (event) {
+                event.preventDefault(); // Prevent the default form submission
+
+                // Show success message
+                successMessage.style.display = "block";
+
+                // Hide the message after 3 seconds
+                setTimeout(() => {
+                    successMessage.style.display = "none";
+                }, 3000);
+            });
+        });   
+    </script>
+ 
     
     <section class="quote-row">
         <section class="quotes-box">
             <article class="quote-card">
                 <section class="quote-content">
                     <h1>“Geweldige service”</h1>
-                    <img src="img/Profile pic.png" alt="Foto 1" class="quote-image">
+                    <img src="img/ProfilePic.png" alt="Foto 1" class="quote-image">
                     <h2 class="quote-title">Titel 1</h2>
                     <p>Dit is een beschrijving van de quote.</p>
                 </section>
@@ -131,7 +130,7 @@
             <article class="quote-card">
                 <section class="quote-content">
                     <h1>“Mijn hond pist niet meer binnen”</h1>
-                    <img src="img/Profile pic.png" alt="Foto 1" class="quote-image">
+                    <img src="img/ProfilePic.png" alt="Foto 1" class="quote-image">
                     <h2 class="quote-title">Titel 1</h2>
                     <p>Dit is een beschrijving van de quote.</p>
                 </section>
@@ -141,7 +140,7 @@
             <article class="quote-card">
                 <section class="quote-content">
                     <h1>“Probleem snel opgelost”</h1>
-                    <img src="img/Profile pic.png" alt="Foto 1" class="quote-image">
+                    <img src="img/ProfilePic.png" alt="Foto 1" class="quote-image">
                     <h2 class="quote-title">Titel 1</h2>
                     <p>Dit is een beschrijving van de quote.</p>
                 </section>
@@ -149,7 +148,7 @@
             <article class="quote-card">
                 <section class="quote-content">
                     <h1>“Zeer tevreden”</h1>
-                    <img src="img/Profile pic.png" alt="Foto 1" class="quote-image">
+                    <img src="img/ProfilePic.png" alt="Foto 1" class="quote-image">
                     <h2 class="quote-title">Titel 1</h2>
                     <p>Dit is een beschrijving van de quote.</p>
                 </section>
@@ -159,7 +158,7 @@
             <article class="quote-card">
                 <section class="quote-content">
                     <h1>“Mijn kat is zich snel gaan gedragen”</h1>
-                    <img src="img/Profile pic.png" alt="Foto 1" class="quote-image">
+                    <img src="img/ProfilePic.png" alt="Foto 1" class="quote-image">
                     <h2 class="quote-title">Titel 1</h2>
                     <p>Dit is een beschrijving van de quote.</p>
                 </section>
@@ -167,20 +166,21 @@
             <article class="quote-card">
                 <section class="quote-content">
                     <h1>“Dit is een inspirerende quote.”</h1>
-                    <img src="img/Profile pic.png" alt="Foto 1" class="quote-image">
+                    <img src="img/ProfilePic.png" alt="Foto 1" class="quote-image">
                     <h2 class="quote-title">Titel 1</h2>
                     <p>Dit is een beschrijving van de quote.</p>
                 </section>
             </article>
         </section>
     </section>
-</body>
-<footer class="footer">
 
-    <ul class="footer-links">
-        <li><a href="#">Privacy Policy</a></li>
-        <li><a href="#">Terms of Service</a></li>
-        <li><a href="#">Support</a></li>
-        <li><a href="#">Contact</a></li>
-    </ul>
-</footer>
+    <footer class="footer">
+    
+        <ul class="footer-links">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </footer>
+</body>
