@@ -1,21 +1,16 @@
 .footer {
     text-align: center;
     background-color: #f8f8f8;
-    width: 96%;
+    width: 100%;
+    max-width: 1490px; 
     margin: auto;
     padding: 20px;
     position: absolute;
-
-}
-
-.footer-line {
-    border: none;
-    height: 4px;
-    background-color: black;
+    border-top: 2px solid black;
+    padding: 20px;
     border-style: double;
-    width: 100%;
-}
 
+}
 .footer-links {
     list-style: none;
     padding: 0;
